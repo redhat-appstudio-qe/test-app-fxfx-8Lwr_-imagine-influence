@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-kake
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/build-e2e-lmui-tenant/test-app-fxfx/devfile-sample-python-basic-kake@sha256:f8c47c4f1974607e4a2bb35b5227cd8f33b51812bf9ab506941e4caf6f08007f
+        name: my-python
+        resources: {}
+status: {}
